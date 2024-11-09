@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Solo Travel Society</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.usefathom.com/script.js" data-site="TYBVFVZL" defer></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-md">
+  <!-- <div class="circle-bg"></div> <!-- This is the grey circle background -->
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        <h1 id="awesome-ghost-" class="mb-4 border-bottom">Solo Travel Society</h1>
+      </header>
+      <p>
+        The Solo Travel Society is for those who love and dream of travelling alone. Here, solo travelers can connect and share valuable tips, safety advice, and personal stories from their journeys. This space not only fosters a sense of belonging but also encourages members to embrace the freedom and empowerment that comes with solo travel. Whether you're seeking inspiration for your next adventure or looking to share your experiences, the Solo Travel Society is the perfect place to find like-minded individuals who understand the unique joys of traveling alone.
+      </p>
+      <p><a href="https://www.digitalnomadsweekly.com/#/portal/signup" title="Join Digital Nomads Weekly" target="_blank">Subscribe</a> to the Digital Nomads Weekly <a href="https://www.digitalnomadsweekly.com/" title="Digital Nomads Weekly" target="_blank">newsletter</a>.</p>
+   <!-- Social Media Icons -->
+   <div class="social-icons">
+    <a href="https://www.facebook.com/thesolotravelsociety/" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.facebook.com/groups/thesolotravelsociety/" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+    <!-- <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a> -->
+   </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <!-- Custom -->
+<script type="text/javascript">
+// Add Ref to External Links
+document.addEventListener('DOMContentLoaded', function() {
+    var refValue = 'solotravelsociety.com';
+    var externalLinks = Array.from(document.querySelectorAll('a[href^="http"]:not([href*="' + window.location.hostname + '"])'));
+
+    externalLinks.forEach(function(link) {
+        var originalHref = link.getAttribute('href');
+        var separator = originalHref.includes('?') ? '&' : '?';
+        var modifiedHref = originalHref + separator + 'ref=' + encodeURIComponent(refValue);
+        link.setAttribute('href', modifiedHref);
+    });
+});
+// Open External Links in New Window
+document.querySelectorAll('a').forEach(function(link) {
+  const linkHostname = new URL(link.href).hostname;
+  const currentHostname = window.location.hostname;
+  
+  // RegExp to match 'solotravelsociety.com', 'www.solotravelsociety.com' and any subdomain of 'solotravelsociety.com'
+  const regex = /^(?:.*\.)?solotravelsociety\.com$/;
+
+  if (
+    !regex.test(linkHostname) &&
+    linkHostname !== currentHostname &&
+    !link.href.startsWith('/') &&
+    !link.href.startsWith('#')
+  ) {
+    link.setAttribute('target', '_blank');
+    link.setAttribute('rel', 'noopener noreferrer'); // Good practice for security reasons
+  }
+});
+</script>
+</body>
+</html>
