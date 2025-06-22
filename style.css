@@ -1,0 +1,131 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.container-md {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-bg {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  background: radial-gradient(circle at center, #a2a2a2, #f0f0f0);
+  /* Radial gradient */
+  border-radius: 50%;
+  top: 0;
+  /* Start 30px from the top */
+  z-index: 1;
+  /* Ensure the circle stays behind */
+}
+
+.wrapper {
+  position: relative;
+  /* Relative to the circle */
+  z-index: 2;
+  /* Bring the wrapper to the front */
+  max-width: 500px;
+  padding: 2em;
+  background: #fff;
+  /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  /* Left align the icons */
+  margin-top: 20px;
+  /* Add some space above */
+}
+
+.social-icon {
+  position: relative;
+  /* Set position to relative for the pseudo-element */
+  color: #666;
+  /* Dark grey color for icons */
+  font-size: 20px;
+  /* Size of the icons */
+  margin: 0 15px;
+  /* Space between icons */
+  text-decoration: none;
+  /* Remove underline from links */
+  transition: color 0.3s;
+  /* Smooth transition for color */
+}
+
+.social-icon::before {
+  content: "";
+  /* Empty content for the circle */
+  position: absolute;
+  width: 40px;
+  /* Diameter of the circle */
+  height: 40px;
+  /* Diameter of the circle */
+  border-radius: 50%;
+  /* Make it a circle */
+  top: 50%;
+  /* Center vertically */
+  left: 50%;
+  /* Center horizontally */
+  transform: translate(-50%, -50%);
+  /* Center the circle */
+  opacity: 0;
+  /* Start with no visibility */
+  transition: opacity 0.3s;
+  /* Smooth transition for hover effect */
+  z-index: -1;
+  /* Send the circle behind the icon */
+}
+
+/* Specific brand colors for social media icons */
+.social-icon.facebook::before {
+  background-color: #3b5998;
+  /* Facebook brand color */
+}
+
+.social-icon.twitter::before {
+  background-color: #1da1f2;
+  /* Twitter brand color */
+}
+
+.social-icon.instagram::before {
+  background-color: #e1306c;
+  /* Instagram brand color */
+}
+
+.social-icon.linkedin::before {
+  background-color: #0077b5;
+  /* LinkedIn brand color */
+}
+
+/* Change icon color on hover */
+.social-icon:hover {
+  color: #fff;
+  /* Change icon color to white on hover */
+}
+
+/* Show the circle on hover */
+.social-icon:hover::before {
+  opacity: 1;
+  /* Show the circle on hover */
+}
