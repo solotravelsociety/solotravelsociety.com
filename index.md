@@ -7,7 +7,11 @@ title: Solo Travel Society
   <div class="wrapper">
     <div class="content">
       <header>
-        <h1 id="awesome-ghost-" class="mb-4">Solo Travel Society</h1>
+        <div class="site-logo text-center my-4">
+          <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Solo Travel Society" height="48">
+          </a>
+        </div>
         <nav class="main-nav text-center my-4">
         <ul class="nav-menu list-inline">
           <li class="list-inline-item active"><a href="{{ '/' | relative_url }}">Home</a></li>
