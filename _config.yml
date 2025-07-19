@@ -2,7 +2,17 @@ title: "Solo Travel Society"
 description: "A space for solo travelers to connect, share, and inspire."
 baseurl: "" # Set to "" for GitHub Pages user site
 url: "https://www.solotravelsociety.com" # Update with your GitHub Pages URL
-
+author: Brandon Himpfen
+lang: en
+logo: /assets/images/logo.png
+twitter:
+  username: solotraveler
+  card: summary_large_image
+social:
+  name: Solo Travel Society
+  links:
+    - https://www.facebook.com/thesolotravelsociety/
+    - https://www.solotraveler.org
 permalink: /:title/
 
 plugins:
