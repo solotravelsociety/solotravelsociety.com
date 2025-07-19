@@ -12,6 +12,11 @@ title: Solo Travel Society
       <p>
         The Solo Travel Society is for those who love and dream of travelling alone. Here, solo travelers can connect and share valuable tips, safety advice, and personal stories from their journeys. This space not only fosters a sense of belonging but also encourages members to embrace the freedom and empowerment that comes with solo travel. Whether you're seeking inspiration for your next adventure or looking to share your experiences, the Solo Travel Society is the perfect place to find like-minded individuals who understand the unique joys of traveling alone.
       </p>
+      <div class="btn-group">
+        <a href="https://www.solotraveler.org/" class="btn btn-primary">Blog</a>
+        <a href="https://www.facebook.com/groups/thesolotravelsociety/" class="btn btn-secondary">Facebook Group</a>
+        <a href="https://www.facebook.com/thesolotravelsociety/" class="btn btn-info" aria-current="page">Facebook Page</a>
+      </div>
       <!--<p><a href="https://www.digitalnomadsweekly.com/#/portal/signup" title="Join Digital Nomads Weekly" target="_blank">Subscribe</a> to the Digital Nomads Weekly <a href="https://www.digitalnomadsweekly.com/" title="Digital Nomads Weekly" target="_blank">newsletter</a>.</p>-->
       <hr class="my-4">
       <h2>Latest Posts</h2>
