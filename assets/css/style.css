@@ -127,6 +127,10 @@ p {
 
 .main-nav {
   font-size: 18px;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .nav-menu {

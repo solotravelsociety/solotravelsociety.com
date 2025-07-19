@@ -8,7 +8,13 @@ permalink: /blog/
   <div class="wrapper">
     <div class="content">
       <header>
-        <h1 id="awesome-ghost-" class="mb-4 border-bottom">Solo Travel Society</h1>
+        <h1 id="awesome-ghost-" class="mb-4">Solo Travel Society</h1>
+        <nav class="main-nav text-center my-4">
+        <ul class="nav-menu list-inline">
+          <li class="list-inline-item"><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li class="list-inline-item active"><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        </ul>
+        </nav>
       </header>
       <h2 class="mb-4">Latest Posts</h2>
         {% for post in site.posts %}
