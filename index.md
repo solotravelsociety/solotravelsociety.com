@@ -22,15 +22,11 @@ title: Solo Travel Society
       <hr class="my-4">
 
       <h2>Latest Posts</h2>
-      <ul class="list-unstyled">
         {% for post in site.posts limit:5 %}
-        <li class="mb-3">
           <h5><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h5>
           <small class="text-muted">{{ post.date | date: "%B %d, %Y" }}</small>
           <p>{{ post.excerpt }}</p>
-        </li>
         {% endfor %}
-      </ul>
       
     </div>
   </div>

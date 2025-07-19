@@ -3,5 +3,7 @@ description: "A space for solo travelers to connect, share, and inspire."
 baseurl: "" # Set to "" for GitHub Pages user site
 url: "https://www.solotravelsociety.com" # Update with your GitHub Pages URL
 
+permalink: /:title/
+
 plugins:
   - jekyll-feed
